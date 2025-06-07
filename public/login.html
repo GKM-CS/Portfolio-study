@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 할일 관리</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <h1 class="main-title">✨ 할일 관리 시스템 ✨</h1>
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="showLogin()">로그인</button>
+                <button class="auth-tab" onclick="showRegister()">회원가입</button>
+            </div>
+            <div id="login-form" class="auth-form">
+                <input type="text" id="login-username" placeholder="아이디">
+                <input type="password" id="login-password" placeholder="비밀번호">
+                <button onclick="login()">로그인</button>
+            </div>
+            <div id="register-form" class="auth-form" style="display: none;">
+                <input type="text" id="register-username" placeholder="아이디">
+                <input type="password" id="register-password" placeholder="비밀번호">
+                <input type="password" id="register-password-confirm" placeholder="비밀번호 확인">
+                <button onclick="register()">회원가입</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2024 할일 관리 시스템. All rights reserved.</p>
+        <p>Created by <span class="author">구경모</span></p>
+    </footer>
+    <script src="/auth.js"></script>
+</body>
+</html> 

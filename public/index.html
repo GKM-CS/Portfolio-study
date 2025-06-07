@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할일 관리</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <header class="app-header">
+            <h1 class="main-title">✨ 할일 관리 시스템 ✨</h1>
+            <div class="user-info">
+                <span id="username-display"></span>
+                <button id="logout-btn" onclick="logout()">로그아웃</button>
+            </div>
+        </header>
+        <div id="add-group-container">
+            <input type="text" id="group-input" placeholder="새로운 그룹 이름을 입력하세요">
+            <button id="add-group-btn">그룹 추가</button>
+        </div>
+        <div id="groups-container"></div>
+    </div>
+    <footer class="footer">
+        <p>© 2024 할일 관리 시스템. All rights reserved.</p>
+        <p>Created by <span class="author">구경모</span></p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html> 
